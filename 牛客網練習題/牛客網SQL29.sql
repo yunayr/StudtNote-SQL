@@ -14,6 +14,4 @@ SELECT f.film_id, f.title
 FROM film AS f
 LEFT JOIN film_category as fc
 ON fc.film_id = f.film_id
-LEFT JOIN category as c
-ON fc.category_id = c.category_id
 WHERE fc.category_id IS NULL;
